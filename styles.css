@@ -1,0 +1,950 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+.basic {
+  width: 100%;
+  height: 3000px;
+  background-color: black;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.footer-basic {
+  width: 100%;
+  height: 180px;
+  background-color: black;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+
+
+/* Navigation bar styles */
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #010718;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure navbar is above other elements */
+}
+
+/* List item styles */
+li {
+  float: left;
+}
+
+/* Anchor tag styles */
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+  font-weight: bold;
+}
+li a:hover {
+  background-color: #3d3f3f;
+}
+
+/* contact button styles */
+.contact {
+  background-color: #2d313c;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  padding: 6px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  float: right;
+}
+
+/* --------------------------------------index.html----------------------------*/
+.homepage-img {
+  max-width: 100%; /*remove this and check the effect*/
+  height: auto;
+  /* max-height: 20%; */
+  /* float:right; */
+}
+
+/* .active :hover{
+  background-color: yellow
+} */
+
+/* text animation */
+
+.container {
+  width: 600px;
+  overflow: hidden;
+  position: absolute; 
+  top: 53%; 
+  left: 35%; 
+}
+.container .text {
+  position: relative;
+  color: #555554;
+  font-size: 30px;
+  font-weight: 600;
+}
+.container .text.first-text {
+  color: #fff;
+}
+.text.sec-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* background-color: #59595a; */
+  /* border-left: 2px solid #2c6f54; */
+  animation: animate 4s steps(12) infinite;
+}
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.index-basic {
+  width: 100%;
+  height: 2500px;
+  background-color: black;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.row{
+  margin: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-col{
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+
+}
+.course-col:hover{
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+  
+}
+
+.campus{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+
+.campus-col{
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.campus-col img{
+  width: 500px;
+  height: 600px;
+  display: block;
+}
+
+.campus-col:hover{
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);   
+
+}
+.layer{
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer:hover{
+  background: rgba(36, 1, 1, 0.7);
+
+}
+
+.layer h3{
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover h3{
+  bottom: 49%;
+  opacity: 1;
+}
+
+
+/* --------------------pollution.html------------------------- */
+
+/* header */
+.content {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  background-image: url("images/pollution-image.jpg");
+  background-size: cover;
+}
+.content h1 {
+  font-size: 100px;
+  margin-top: 50px;
+  color: #010718;
+  width: 100%;
+}
+
+/* definition of pollution */
+.define {
+  width: 100%;
+  height: 600px;
+  background-color: black;
+  display: flex;
+  color: #fff;
+}
+
+.image {
+  flex: 1;
+  margin-top: 50px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.image img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  margin-left: 120px;
+}
+
+.explain {
+  flex: 1;
+  margin-top: 80px;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+/* heading */
+.heading {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  font-size: 50px;
+}
+
+/* image - grids */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px; 
+  width: 100%;
+  height:600px;
+  background-color: black;
+  color: #fff;
+  padding-left: 150px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.2s ease;
+}
+
+.card:hover .overlay {
+  opacity: 0.8; /* overlay on hover */
+}
+
+.text {
+  color: white;
+  text-align: center;
+  font-size: medium;
+  padding: 20px;
+  backdrop-filter: blur(0px); /* Blurred background */
+}
+
+/* air pollution related info */
+#head-air {
+  font-size: 70px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-top: 25px;
+}
+
+.air-reference {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.air-para {
+  padding-left: 10px;
+  /* font-size: 20px; */
+}
+
+.p-air {
+  font-size: larger;
+}
+
+.air-align {
+  padding-left: 20px;
+}
+
+/* --------------------policies.html--------------------------------- */
+
+.policies-content {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+  height: 800px;
+  background-image: url("images/policies-2.1.jpg");
+  background-size: cover;
+}
+
+.policies-content h1 {
+  font-size: 120px;
+  margin-top: 250px;
+  color: #ebeae9;
+  width: 100%;
+}
+
+.policies-basic {
+  padding-top: 20px;
+  width: 100%;
+  height: 10800px;
+  background-color: black;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.ncap {
+  padding-left: 20px;
+}
+#ncap-img {
+  width: 800px;
+  height: 700px;
+  position: relative;
+  left: 21%;
+}
+
+#ncap-img2 {
+  width: 800px;
+  height: 500px;
+  position: relative;
+  left: 21%;
+}
+
+#pmuy-img {
+  /* width: 800px; */
+  /* height: 700px; */
+  position: relative;
+  left: 21%;
+}
+
+#pmuy-img2 {
+  width: 800px;
+  height: 500px;
+  position: relative;
+  left: 21%;
+}
+
+#pmuy-img3 {
+  width: 600px;
+  height: 500px;
+  position: relative;
+  left: 28%;
+}
+
+.pmuy {
+  padding-left: 20px;
+}
+
+.bs {
+  padding-left: 20px;
+}
+
+#bs-img {
+  width: 800px;
+  height: 400px;
+  position: relative;
+  left: 21%;
+}
+
+#bs-img2 {
+  width: 800px;
+  height: 600px;
+  position: relative;
+  left: 21%;
+}
+#bs-img3 {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  left: 25%;
+}
+
+.sub-title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: small;
+  position: relative;
+  left: 25%;
+}
+
+.emm {
+  padding-left: 20px;
+}
+
+#emm-img {
+  width: 800px;
+  height: 500px;
+  position: relative;
+  left: 21%;
+}
+
+#emm-img2 {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  left: 30%;
+}
+
+#emm-img3 {
+  width: 700px;
+  height: 500px;
+  position: relative;
+  left: 25%;
+}
+
+/* -----------------solution.html--------------------------------- */
+
+.sol-content {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+  height: 1000px;
+  background-image: url("images/sol-img.jpg");
+  background-size: cover;
+}
+
+.sol-content h1 {
+  font-size: 90px;
+  margin-top: px;
+  color: #e2df0e;
+  width: 100%;
+}
+
+.sol-basic {
+  width: 100%;
+  height: 5100px;
+  background-color: black;
+  color: #fff;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.shift {
+  padding-left: 20px;
+}
+
+.renew-energy {
+  width: 100%;
+  height: 600px;
+  background-color: black;
+  display: flex;
+  color: #fff;
+}
+.renew-energy-explain {
+  flex: 5;
+  margin-top: 80px;
+  font-size: 20px;
+  padding-right: 10px;
+  text-align: justify;
+  margin-right: 20px;
+}
+.sol-img2 {
+  flex: 5;
+  margin-top: 50px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding-left: 5px;
+}
+.sol-img2 img {
+  width: 70%;
+  height: 50%;
+  object-fit: cover;
+  margin-left: 120px;
+}
+
+.net-zero {
+  width: 100%;
+  height: 600px;
+  background-color: black;
+  display: flex;
+  color: #fff;
+}
+.net-zero-explain {
+  flex: 5;
+  margin-top: 80px;
+  font-size: 20px;
+  padding-right: 10px;
+  text-align: justify;
+  margin-left: 120px;
+}
+.sol-img3 {
+  flex: 5;
+  margin-top: 50px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.sol-img3 img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  /* margin-left: 20px; */
+}
+
+
+/* --------------------------------------stories.html------------------------------------------------ */
+.stories-basic {
+  width: 100%;
+  height: 639px;
+  background-color: black;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  overflow-y: hidden;
+}
+
+.card-container {
+  display: flex;
+  overflow-x: auto; 
+  width: 100%;
+  max-width: 100%;
+  height: 600px;
+  padding: 10px; 
+  overflow-y: hidden;
+}
+
+/* Hide the scrollbar */
+.card-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.card-container::-webkit-scrollbar-track {
+  background:#3d3f3f; 
+}
+.card-container::-webkit-scrollbar-thumb {
+  background: #494949; /* Color of the thumb (handle) */
+}
+.card-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the thumb on hover */
+}
+
+.card {
+  flex: 0 0 auto; 
+  width: 400px;
+  height: 100%; 
+  background-color: #100303;
+  margin-right: 10px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  transition: transform 0.3s ease; 
+  
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.story-img{
+  border-radius: 10px; 
+}
+
+
+/* ------------------------------------dust.html----------------------------------------- */
+.dust-basic {
+  width: 100%;
+  height: 3500px;
+  background-color: black;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  padding-top: 80px;
+}
+
+.dust-content {
+  font-size: 40px;
+  margin-top: 40px;
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+  height: 610px;
+  background-image: url("images/dust-img.webp");
+  background-size: cover;
+}
+
+.dust-img{
+  padding-left: 25%;
+  border-radius: 10px;
+}
+
+/* ------------------------gastragedy.html-------------------------------------- */
+.bpg-basic {
+  width: 100%;
+  height: 3000px;
+  background-color: black;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  padding-top: 80px;
+}
+
+.bpg-content {
+  font-size: 40px;
+  margin-top: 40px;
+  padding-top: 50px;
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+  height: 610px;
+  background-image: url("images/bpg-img.jpg");
+  background-size: cover;
+}
+
+.bpg-img{
+  padding-left: 18%;
+  border-radius: 10px;
+}
+
+.bpg-img3{
+  padding-left: 25%;
+  border-radius: 10px; 
+}
+
+/* -----------------------------------london.html---------------------- */
+.london-basic {
+  width: 100%;
+  height: 2100px;
+  background-color: black;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  padding-top: 80px;
+}
+
+.london-content {
+  font-size: 40px;
+  margin-top: 40px;
+  padding-top: 50px;
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+  height: 610px;
+  background-image: url("images/london-img.jpg");
+  background-size: cover;
+}
+
+.london-img{
+  padding-left: 35%;
+  border-radius: 10px;
+}
+
+/* -----------------------------------kuwait.html------------------------------- */
+.kuwait-basic {
+  width: 100%;
+  height: 1700px;
+  background-color: black;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  padding-top: 80px;
+}
+
+.kuwait-content {
+  font-size: 40px;
+  margin-top: 40px;
+  padding-top: 400px;
+  color: #da3d3d;
+  padding-left: 20px;
+  text-align: left;
+  width: 100%;
+  height: 610px;
+  background-image: url("images/kuwait-img.jpg");
+  background-size: cover;
+}
+
+.kuwait-img{
+  padding-left: 35%;
+  border-radius: 10px;
+}
+
+/* ------------------------------donora.html--------------------- */
+.donora-basic {
+  width: 100%;
+  height: 2300px;
+  background-color: black;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  padding-top: 80px;
+}
+
+.donora-content {
+  font-size: 40px;
+  margin-top: 40px;
+  /* padding-top: 400px; */
+  color: #020101;
+  padding-left: 20px;
+  text-align: left;
+  width: 100%;
+  height: 610px;
+  background-image: url("images/donora-img.jpg");
+  background-size: cover;
+}
+
+.donora-img{
+  padding-left: 35%;
+  border-radius: 10px;
+}
+
+.donora-img3{
+  /* /* width: 200px; */
+  height: 400px; 
+  padding-left: 30%;
+  border-radius: 10px;
+}
+
+/* -------------------sevesa.html---------------------- */
+
+.seveso-basic {
+  width: 100%;
+  height: 3600px;
+  background-color: black;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  padding-top: 80px;
+}
+
+.seveso-content {
+  font-size: 40px;
+  margin-top: 40px;
+  /* padding-top: 400px; */
+  color: #020101;
+  padding-left: 20px;
+  text-align: left;
+  width: 100%;
+  height: 610px;
+  background-image: url("images/seveso-img.jpg");
+  background-size: cover;
+}
+
+.seveso-img{
+  padding-left: 30%;
+  border-radius: 10px;
+  
+  /* height: 500px; */
+}
+.seveso-img4{
+  padding-left: 10%;
+  border-radius: 10px;
+  
+  /* height: 500px; */
+}
+
+/* -----------------chernobyl.html----------- */
+.chernobyl-basic {
+  width: 100%;
+  height: 3600px;
+  background-color: black;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  padding-top: 80px;
+}
+
+.chernobyl-content {
+  font-size: 40px;
+  margin-top: 40px;
+  /* padding-top: 400px; */
+  color: #020101;
+  padding-left: 20px;
+  text-align: left;
+  width: 100%;
+  height: 610px;
+  background-image: url("images/chernoybl-img.jpg");
+  background-size: cover;
+}
+
+.chernobyl-img{
+  padding-left: 20%;
+  border-radius: 10px;
+  
+  /* height: 500px; */
+}
+
+.chernobyl-img3{
+  padding-left: 20%;
+  border-radius: 10px;
+  height: 500px; 
+}
+
+/* -----------------------------------contact.html--------------------------------- */
+
+
+.contact-basic {
+  width: 100%;
+  height: 640px;
+  background-color: black;
+  color: #fff;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+  font-size: 20px;
+
+  /* Add the blur effect */
+  /* filter: blur(2px);
+  -webkit-filter: blur(2px); */
+  display: flex;
+  padding-top: 40px;
+}
+
+.contact-content{
+  flex: 8;
+  /* background-image: url("images/contact-img.jpeg");
+  background-size: cover;  */
+  /* filter: blur(2px);
+  -webkit-filter: blur(2px);   */
+  
+}
+
+.contact-img{
+  flex:2;
+  background-image: url("images/contact-img2.png");
+}
+
+#green-earth{
+  height: 350px;
+  width: 350px;
+}
+
+form{
+  padding-top: 100px;
+  width: 40%;
+  margin: 0 auto;
+
+}
+
+label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],[type="email"],textarea{
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(16, 21, 87);
+  outline: none; 
+  color: white; 
+  font-size: 14px; 
+  padding: 5px;
+}
+
+input[type="submit"]{
+  width: 30%;
+  padding: 10px;
+  background-color: #158087;;
+  color: #fff;
+  border:none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3; 
+}
+
+

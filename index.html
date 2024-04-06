@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air Pollution</title>
+    <link rel="stylesheet" href="styles.css?v=1.0" />
+  </head>
+
+   
+  <body>
+
+    <nav>
+      <a href="index.html"><img src="" /></a>
+      <div class="nav-links" >
+        <ul>
+          <li><a href="index.html" >HOME</a></li>
+          <li><a href="pollution.html">POLLUTION</a></li>
+          <li><a href="policies.html" >POLICIES</a></li>
+          <li><a href="solutions.html" >SOLUTIONS</a></li>
+          <li><a href="stories.html" >STORIES</a></li>
+          <li class="contact"><a href="contact.html" >CONTACT US</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section >
+      <img class="homepage-img"src="images\airpollution.png" alt="" >
+      <div class="container">
+        <span class="text first-text"></span>
+        <span class="text sec-text"></span>
+      </div>
+    </section>
+
+    <script>
+      const text = document.querySelector(".sec-text");
+      const textLoad = () => {
+        setTimeout(() => {
+          text.textContent = "What? - The Problem!";
+        }, 0);
+        setTimeout(() => {
+          text.textContent = "How? - The Cause";
+        }, 4000);
+        setTimeout(() => {
+          text.textContent = "Government Initiatives";
+        }, 8000);
+        setTimeout(() => {
+          text.textContent = "What can we do?";
+        }, 12000);
+        setTimeout(() => {
+          text.textContent = "A Complete Guide";
+        }, 16000); //1s = 1000 milliseconds
+      };
+      textLoad();
+      setInterval(textLoad, 20000);
+    </script>
+
+
+
+
+    <div class="index-basic">
+    <section class="campus">
+        <h1>AIR POLLUTION - CAUSES</h1>
+  
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/index-img.webp">
+                <div class="layer">
+                    <h3>INDUSTRIES</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+              <a href="seveso.html"></a>
+
+                <img src="images/index-img2.webp">
+                <div class="layer">
+                  <h3>FOREST FIRES</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/index-img3.jpg">
+                <div class="layer">
+                    <h3>VEHICLE POLLUTION</h3>
+                </div>
+            </div>
+        </div>
+
+
+        <h1>AIR POLLUTION - IMPACTS</h1>
+
+        <div class="row">
+          <div class="campus-col">
+              <img src="images/index-img4.jpg">
+              <div class="layer">
+                  <h3>CLIMATE CHANGE</h3>
+              </div>
+          </div>
+          <div class="campus-col">
+              <img src="images/index-img5.jpg">
+              <div class="layer">
+                  <h3>OZONE LAYER DEPLETION</h3>
+              </div>
+          </div>
+          <div class="campus-col">
+              <img src="images/index-img6.webp">
+              <div class="layer">
+                  <h3>HEALTH IMPACTS</h3>
+              </div>
+          </div>
+        </div>
+
+        <h1>AIR POLLUTION - SOLUTIONS</h1>
+
+        <div class="row">
+          <div class="campus-col">
+              <img src="images/index-img7.jpg">
+              <div class="layer">
+                  <h3>CLEAN ENERGY GENERATION</h3>
+              </div>
+          </div>
+          <div class="campus-col">
+              <img src="images/index-img8.jpg">
+              <div class="layer">
+                  <h3>ELECTRIC VEHICLES</h3>
+              </div>
+          </div>
+          <div class="campus-col">
+              <img src="images/index-img9.jpg">
+              <div class="layer">
+                  <h3>USE PUBLIC TRANSPORT</h3>
+              </div>
+          </div>
+        </div> 
+    </section>
+    </div>
+<hr>
+
+    <!-- <footer class="footer-basic">
+      <div>
+          <a href="#">About Us</a> | 
+          <a href="contact.html">Contact Us</a> | 
+          
+          
+      </div>
+      <div>
+          <p>Address: Jalandhar, Punjab</p>
+      </div>
+      <div>
+          <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+          <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+          <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+          <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+      </div>
+      <div>
+          <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+      </div>
+  </footer> -->
+
+  </body>
+</html>
